@@ -1,0 +1,185 @@
+/*
+ *
+ *  Styles des composants
+ *  
+ *  #TODO: Appliquer le style de notation de classe SMACSS ou BEM
+ *
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans &family=Roboto&display=swap");
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+
+    top: 0;
+    left: 0;
+    padding: 0 24px;
+    height: 64px;
+
+    /* #NOTE: Positionnement des items*/
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    /* #NOTE: Apparence de la navbar*/
+    background-color: #003247;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-color: #335E6F;
+}
+
+.navbar-items {
+    /* #NOTE: Centrage des éléments enfants */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.navbar-items a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Open sans', sans-serif;
+    font-size: 18px;
+}
+
+.navbar-items.is-active a {
+    color: rgb(168, 168, 168);
+}
+
+/* Définition des règles CSS pour la frise chronologie*/
+.timeline-container {
+    width: 50%;
+    margin: auto;
+    display: block;
+    position: relative;
+}
+
+.timeline-container ul.timeline {
+    margin: 20px 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.timeline-container ul.timeline li {
+    list-style: none;
+    margin: auto;
+    margin-left: 200px;
+    min-height: 50px;
+    border-left: 1px dashed #86d6ff;
+    padding: 0 0 50px 30px;
+    position: relative;
+}
+
+.timeline-container ul.timeline li:last-child {
+    border-left: 0;
+}
+
+.timeline-container ul.timeline li::before {
+    position: absolute;
+    left: -18px;
+    top: 20px;
+    content: " ";
+    border: 8px solid rgba(255, 255, 255, 0.74);
+    border-radius: 500%;
+    background: #003247;
+    height: 20px;
+    width: 20px;
+}
+
+.timeline-container ul.timeline li .timeline-timestamp {
+    color: #8D8D8D;
+    position: absolute;
+    width: 100px;
+    left: -130px;
+    text-align: right;
+    font-size: 15px;
+}
+
+.timeline-container ul.timeline li .timeline-detail {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    max-width: 490px;
+}
+
+.timeline-container ul.timeline li .timeline-card {
+    padding: 24px 15px 15px 25px;
+
+    margin-bottom: 20px;
+
+    background-color: #ffff;
+    box-shadow: 0 4px 4px 0 rgba(43, 43, 43, 0.15);
+    max-width: 400px;
+
+    border-radius: 25px;
+}
+
+.timeline-container ul.timeline li .timeline-title {
+    font-size: 22px;
+}
+
+/*
+ *
+ *  #NOTE: Pied de Page 
+ *
+ *
+*/
+
+.footer {
+    border-top: 0.5px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+
+    justify-items: center;
+    align-content: center;
+
+    justify-content: center;
+    width: 100%;
+
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.footer .footer-item {
+    width: 300px;
+}
+
+.footer .footer-item li {
+    list-style: none;
+    color: #7e7e7e;
+}
+
+.footer .footer-item ul {
+    line-height: 30px;
+    padding: 0;
+}
+
+.footer .footer-item ul li a {
+    font-style: normal;
+    color: #7e7e7e;
+    text-decoration: none;
+}
+
+.footer .footer-item ul li a:hover {
+    font-style: normal;
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+.footer .footer-item ul li a:checked {
+    font-style: normal;
+    color: #8D8D8D;
+    text-decoration: none;
+}
+
+.border-bottom-stylised {
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to left, #003247, #002b36);
+}
