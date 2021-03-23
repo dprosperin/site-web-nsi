@@ -1,0 +1,30 @@
+.content{
+    display: flex;
+    flex-direction:row;
+    padding:40px;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color:#333;
+    color:white;
+}
+
+.content h1{
+    align-self: start;
+}
+
+.text{
+    padding:40px;
+}
+
+#explorer-1 img{
+    height:230px;
+    width:auto;
+    
+}
+
+#vanguard-1 img{
+    height:300px;
+    width:auto;
+}
