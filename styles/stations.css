@@ -1,4 +1,8 @@
 .container {
+    padding-bottom: 50px;
+}
+
+.demo {
     display: flex;
 
     justify-content: center;
@@ -7,22 +11,42 @@
     height: 600px;
     width: 100%;
 
+    
+}
+.demo .is-hover {
+    display: none;
+}
+
+.demo:hover .is-active{
+    display: none;
+}
+
+.demo:hover .is-hover {
+    display: block
+}
+
+.content {
+    display: block;
+    min-width: 512px;
+    max-width: 800px;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+
+.content.center {
+    margin: 0 auto;
+}
+
+#ISS .demo {
     background: no-repeat url("../assets/earth-view-from-space-by-nasa-darkness.jpg");
     background-size: cover;
     background-position: center 90px;
     background-color: #1d1d1d;
 }
-.container .is-hover {
-    display: none;
-}
 
-.container:hover .is-active{
-    display: none;
-}
-
-.container:hover .is-hover {
-    display: block
-}
-
-.container:hover {
+#skylab .demo {
+    background: no-repeat url("../assets/earth-view-from-space-by-nasa-darkness.jpg");
+    background-size: cover;
+    background-position: center 90px;
+    background-color: #1d1d1d;
 }
