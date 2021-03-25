@@ -10,10 +10,6 @@
     color:white;
 }
 
-.content h1{
-    align-self: start;
-}
-
 .text{
     padding:40px;
 }
@@ -27,4 +23,9 @@
 #vanguard-1 img{
     height:300px;
     width:auto;
+}
+.content img{
+    border-radius: 25px;
+    height: auto; 
+    width: 350px;
 }

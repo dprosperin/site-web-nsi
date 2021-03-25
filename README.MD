@@ -17,7 +17,8 @@ Nous nous sommes inspiré des sites web et des maquettes suivantes :
 - [Centre National d'Études Spatiales](https://cnes.fr/)
 - [National Aeronautics and Space Administration](https://www.nasa.gov/)
 - [Tableau personel sur Pinterest.fr](https://www.pinterest.fr/davidprosperin/site-nsi-design-space/)
-- [NPMJS](https://www.npmjs.com/)
+- [Destiny 2](https://www.bungie.net/7/fr/Destiny/NewLight)
+- [Master of Orion](https://masteroforion.eu/fr/intro)
 
 # Les sources 
 ## Sitographie
@@ -37,4 +38,6 @@ Nous nous sommes inspiré des sites web et des maquettes suivantes :
 - Les polices : Roboto et Open Sans depuis fonts.google.com
 - color.adobe.com pour le choix de la palette de couleurs
 - khroma.co pour le choix des couleurs 
+- Gimp pour la retouche d'image
+- Inkscape pour l'infographie
 
